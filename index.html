@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="description" content="PDF Viewer"/>
+
+    <title>PDF Viewer</title>
+
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+</head>
+
+<body onload="loadPDF();">
+  <div id="page">
+    <!-- <canvas id="canvas"></canvas> -->
+  </div>
+  
+  <div id="iFrameHolder">
+  <iframe id="embed" src="/web/viewer.html?file=%2F100pages.pdf"></iframe
+  </div>
+  <br><br><br>
+  <div id="iFrameHolder1">
+  <iframe id="embed" src="/web/viewer.html?file=%2Fimage_test_pdf.pdf"></iframe
+  </div>
+  
+  
+    <div id="anotherTest">
+      <a href="/web/viewer.html?file=%2F100pages.pdf">Open pdf with PDF.js in a new page</a>
+    </div>
+  
+
+  <script src="js/pdf.js"></script>
+  <script src="js/pdf.worker.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
